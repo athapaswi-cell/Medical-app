@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Healthcare App Color Scheme */
+:root {
+  --bg-primary: #F4F8FB;
+  --header-gradient-start: #1E88E5;
+  --header-gradient-end: #42A5F5;
+  --card-bg: #FFFFFF;
+  --card-border: #E0E0E0;
+  --text-primary: #1F2937;
+  --text-secondary: #4B5563;
+  --button-primary: #1E88E5;
+  --button-hover: #1565C0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Header gradient */
+.header-gradient {
+  background: linear-gradient(135deg, var(--header-gradient-start), var(--header-gradient-end));
+}
+
+/* Hospital cards */
+.hospital-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.hospital-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Text styles */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--button-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--button-hover);
+}
+
+/* Link styles */
+a {
+  color: var(--button-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--button-hover);
+  text-decoration: underline;
+}
